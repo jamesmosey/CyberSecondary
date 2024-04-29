@@ -4,7 +4,7 @@ window.onscroll = function() {
 };
 
 function scrollFunction() {
-    let mybutton = document.querySelector(".btn3");
+  let mybutton = document.querySelector(".btn3");
   if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
     mybutton.style.display = "block";
   } else {

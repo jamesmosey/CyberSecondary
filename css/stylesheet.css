@@ -24,6 +24,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
+    overscroll-behavior-y: none;
 }
 
 .wrapper {
@@ -167,12 +168,14 @@ body {
         calc(0.5 * var(--s)) 0 / calc(2 * var(--s)) var(--s);
     height: 80px;
     order: 3;
+    overflow: hidden;
 }
 
 .footer small {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    margin-top: 5px;
     font-size: 15px;
     margin-left: -10px;
     color: rgb(187, 185, 185);
@@ -182,8 +185,8 @@ body {
 .footer a:visited,
 .footer a:active {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     margin-top: 20px;
     color: rgba(176, 250, 27, 0.774);
     margin-right: 12px;
@@ -266,65 +269,6 @@ iframe	{
     top: 0; left: 0; right: 0; bottom: 0;
     width: 100%;
     height: 100%;
-}
-
-#form1 p {
-    font-family: Tahoma, Arial, Helvetica, sans-serif;
-    margin-top: 20px;
-    margin-bottom: -20px;
-    margin-left: 50px;
-}
-
-#form1 label {
-    font-family: Tahoma, Arial, Helvetica, sans-serif;
-    font-size: 15px;
-}
-
-#form1 textarea {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-#form1 input[type="text"] {
-    margin-bottom: 10px;
-}
-
-#form1 input[type="email"] {
-    margin-bottom: 10px;
-}
-
-#form1 input[type="submit"] {
-    margin: 10px;
-    margin-left: 50px;
-    font-family: Tahoma, Arial, Helvetica, sans-serif;
-}
-
-#form1 input[type="radio"] {
-    margin: 5px;
-}
-
-#form1 input[type="color"] {
-    margin-top: 4px;
-    margin-bottom: 10px;
-    
-}
-
-#form1 input[type="file"] {
-    margin-bottom: 7px;
-    margin-top: 2px;
-}
-
-#form1 fieldset {
-    margin-top: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-#form1 fieldset legend {
-    font-family: Tahoma, Arial, Helvetica, sans-serif;
 }
 
 .card {
@@ -903,7 +847,6 @@ cite {
   .particle-pen {
     position: absolute;
     width: 200%;
-    aspect-ratio: 1;
     top: 50%;
     left: 50%;
     translate: -50% -50%;
@@ -911,6 +854,7 @@ cite {
     z-index: -1;
     opacity: var(--active, 0);
     transition: opacity var(--transition);
+    overflow: hidden;
 }
   
 .particle {
