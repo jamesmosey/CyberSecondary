@@ -271,6 +271,14 @@ iframe	{
     height: 100%;
 }
 
+.resourceimg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .card {
     background: white;
     width: 300px;
@@ -314,6 +322,25 @@ iframe	{
     100% { --gradient-angle: 360deg; } 
 }
 
+::-webkit-scrollbar{
+    margin: 2em;
+    width: auto;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #3c2d9e;
+    border-radius: 100vw;
+}
+::-webkit-scrollbar-track{
+    background: transparent;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgba(60, 45, 158, 0.63);
+}
+::-webkit-scrollbar-thumb:focus{
+    background-color: rgba(60, 45, 158, 0.63);
+}
+
 .card-image {
     background-color: aqua;
     height: 175px;
@@ -323,27 +350,27 @@ iframe	{
 }
 
 .card-1 {
-    background-image: url('../images/recall.jpeg');
+    background-image: url('../images/strongpassword.jpg');
 }
 
 .card-2 {
-    background-image: url('../images/pomodoro.jpg');
+    background-image: url('../images/authentication.png');
 }
 
 .card-3 {
-    background-image: url('../images/comment.jpg');
+    background-image: url('../images/firewall.jpg');
 }
 
 .card-4 {
-    background-image: url('../images/leitner.jpg');
+    background-image: url('../images/encryption.jpg');
 }
 
 .card-5 {
-    background-image: url('../images/feynman.png');
+    background-image: url('../images/accesscontrol.jpeg');
 }
 
 .card-6 {
-    background-image: url('../images/feynman.png');
+    background-image: url('../images/networksegmentation.png');
 }
 
 .card h2 {
@@ -597,6 +624,20 @@ cite {
   .button:hover .hover-text {
     width: 100%;
     filter: drop-shadow(0 0 23px var(--animation-color))
+}
+
+.privacylist {
+    font-weight: bold;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    color: #000000;
+    font-size: 16px;
+}
+
+.privacylistitem {
+    font-weight: bold;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    color: #000000;
+    font-size: 16px;
 }
 
 .btn2 {
